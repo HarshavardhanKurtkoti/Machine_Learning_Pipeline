@@ -1,21 +1,20 @@
-
-
 # 📘 Machine Learning Pipeline with DVC and MLflow
 
 This project demonstrates a robust machine learning pipeline using **DVC** (Data Version Control) for data and model versioning, and **MLflow** for experiment tracking. The model, a Random Forest Classifier, is trained on the Pima Indians Diabetes Dataset with clearly defined stages for data preprocessing, model training, and evaluation.
 
+
 ## Table of Contents
-1. [Project Overview](###project-overview)
-2. [Project Structure](###project-structure)
-3. [Requirements](###requirements)
-4. [Data](###data)
-5. [Pipeline Stages](###pipeline-stages)
-6. [Model Deployment and Experiment Tracking](###model-deployment-and-experiment-tracking)
-7. [Usage](###usage)
-8. [Results](###results)
-9. [Future Improvements](###future-improvements)
-10. [Contributors](###contributors)
-11. [References](###references)
+1. [Project Overview](#project-overview)
+2. [Project Structure](#project-structure)
+3. [Requirements](#requirements)
+4. [Data](#data)
+5. [Pipeline Stages](#pipeline-stages)
+6. [Model Deployment and Experiment Tracking](#model-deployment-and-experiment-tracking)
+7. [Usage](#usage)
+8. [Results](#results)
+9. [Future Improvements](#future-improvements)
+10. [Contributors](#contributors)
+11. [References](#references)
 
 ---
 
@@ -25,7 +24,7 @@ This project demonstrates a robust machine learning pipeline using **DVC** (Data
   - **DVC**: For version control of data, models, and pipeline stages.
   - **MLflow**: For logging experiment metrics and artifacts.
   - **Scikit-learn**: For model training.
-  
+
 ### 2. Project Structure
 ```
 ├── data/                      # Data storage (raw, processed)
