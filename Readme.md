@@ -51,7 +51,7 @@ This project uses:
 - **mlflow**
 - **dvc-s3** (optional, for S3 storage integration)
 
-### 4. Data
+### Data
 - **Dataset**: The Pima Indians Diabetes dataset.
 - **Location**: Place the raw data file at `data/raw/data.csv`.
 - **Version Control**: The dataset, models, and outputs are tracked with DVC to ensure reproducibility.
