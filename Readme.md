@@ -18,14 +18,14 @@ This project demonstrates a robust machine learning pipeline using **DVC** (Data
 
 ---
 
-### 1. Project Overview
+### Project Overview
 - **Purpose**: Create a reproducible ML pipeline for training and evaluating a Random Forest Classifier using structured stages with data and model versioning.
 - **Technologies Used**: 
   - **DVC**: For version control of data, models, and pipeline stages.
   - **MLflow**: For logging experiment metrics and artifacts.
   - **Scikit-learn**: For model training.
 
-### 2. Project Structure
+### Project Structure
 ```
 ├── data/                      # Data storage (raw, processed)
 ├── models/                    # Trained models
@@ -39,7 +39,7 @@ This project demonstrates a robust machine learning pipeline using **DVC** (Data
 ├── README.md                  # Project README
 ```
 
-### 3. Requirements
+### Requirements
 To set up the environment, install dependencies with:
 ```bash
 pip install -r requirements.txt
@@ -56,7 +56,7 @@ This project uses:
 - **Location**: Place the raw data file at `data/raw/data.csv`.
 - **Version Control**: The dataset, models, and outputs are tracked with DVC to ensure reproducibility.
 
-### 5. Pipeline Stages
+### Pipeline Stages
 
 #### Preprocessing
 - **Script**: `src/preprocess.py`
@@ -83,7 +83,7 @@ This project uses:
   dvc repro evaluate
   ```
 
-### 6. Model Deployment and Experiment Tracking
+### Model Deployment and Experiment Tracking
 - **Experiment Tracking**: MLflow is used to log model parameters and metrics. This allows comparison of different training configurations for optimization.
 - **Running MLflow UI**:
   ```bash
@@ -91,7 +91,7 @@ This project uses:
   ```
   Access the MLflow tracking server at [http://localhost:5000](http://localhost:5000).
 
-### 7. Usage
+### Usage
 
 #### Pipeline Execution
 To run the entire pipeline:
@@ -109,19 +109,19 @@ dvc stage add -n preprocess \
     python src/preprocess.py
 ```
 
-### 8. Results
+### Results
 - **Metrics Tracked**: Model accuracy and other relevant metrics are logged and tracked through MLflow.
 - **Model Artifacts**: Saved in the `models/` directory and version-controlled with DVC.
 
-### 9. Future Improvements
+### Future Improvements
 - **Model Optimization**: Experiment with other algorithms or hyperparameters.
 - **Data Augmentation**: Incorporate data augmentation techniques to enhance model robustness.
 - **Deployment**: Implement a model-serving API for real-time predictions.
 
-### 10. Contributors
+### Contributors
 - **Your Name** (Primary Developer)
   
-### 11. References
+### References
 - [DVC Documentation](https://dvc.org/doc)
 - [MLflow Documentation](https://mlflow.org/docs/latest/index.html)
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
